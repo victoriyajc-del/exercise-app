@@ -1,16 +1,45 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Exercise App (React + Vite)
 
-Currently, two official plugins are available:
+This project is a simple exercise tracking application built with **React** and **Vite**. The app allows users to select an exercise from a menu and interact with it based on the exercise type. It demonstrates state management, conditional rendering, and component-based design in React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- A main menu screen with selectable exercises
+- Two reusable exercise components:
+  - **RepetitionExercise** – tracks repetitions using an internal counter
+  - **DurationExercise** – tracks time using a running timer
+- Exercise name is passed as a prop and displayed at the top of each screen
+- Conditional rendering to switch between the menu and exercise views
+- Timer values are formatted with padded digits (e.g., `00:05`)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Project Structure
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+src/
+├─ App.jsx
+├─ components/
+│ ├─ RepetitionExercise/
+│ │ └─ index.jsx
+│ └─ DurationExercise/
+│ └─ index.jsx
+
+
+## How to Run the Project
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/victoriyajc-del/exercise-app.git
+cd exercise-app
+
+Install Node
+and
+npm run dev
+
+
+http://localhost:5173/
+
+
+
+
+
